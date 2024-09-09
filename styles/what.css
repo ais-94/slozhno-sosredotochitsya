@@ -32,6 +32,9 @@
 .section_what_list_item {
   flex: 0 0 auto;
   width: 32%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 @media (width <= 768px) {
@@ -39,10 +42,4 @@
     flex: 1 0 auto;
     width: 100%;
   }
-}
-
-.section_what_list_item {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
 }
