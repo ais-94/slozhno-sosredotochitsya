@@ -2,7 +2,7 @@
 
 ### Задача данного проекта сделать адаптивную верстку сайта по макету.
 
-### Добавлены файлы свойств css в папке styles: why.css, what.css, image.css, header.css, footer.css
+### Добавлены файлы свойств css в папке styles: why, what, image, header, footer.
 
 ### [мой репозиторий][def]
 
