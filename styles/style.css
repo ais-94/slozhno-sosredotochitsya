@@ -1,5 +1,121 @@
-/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
+@charset "UTF-8";
+
+html {
+  block-size: 100%;
+}
+
+.header__title,
+.footer__title {
+  font-family: inherit;
+  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  font-weight: 700;
+  color: var(--title-color);
+  text-shadow: 4px 4px 0px var(--title-shadow);
+}
+
+@media (width < 768px) and (width >= 375px) {
+  .header__title {
+    font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+    margin-left: 0;
+    line-height: 82.5%;
+  }
+}
+
+.section_article_text {
+  display: flex;
+  flex-direction: column;
+}
+
+.section_article_text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 130%;
+  font-family: inherit;
+}
 
 .page {
-  /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  --transition-duration: 0.25s;
+  background: var(--background-image) no-repeat top center,
+    var(--background-color);
+  background-size: auto 100vmax;
+  background-attachment: fixed;
+  color: var(--main-text-color);
+  transition-duration: var(--transition-duration);
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: 18px;
+  font-weight: 400;
+  min-inline-size: 375px;
+  max-inline-size: 1024px;
+  margin: 0 auto;
+  block-size: 100%;
+}
+
+.main_section_list {
+  padding: 60px 20px 60px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+@media (width < 768px) {
+  .main_section_list {
+    padding: 30px 10px 0;
+    gap: 50px;
+  }
+}
+
+.section_article-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--article-title-color);
+}
+
+.section_title {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--section-title-color);
+}
+
+.decorated-zone::before {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-left: 1px solid var(--outline-color);
+  border-bottom: 1px solid var(--outline-color);
+  left: 20px;
+  bottom: 20px;
+}
+
+@media (width < 768px) and (width >= 375px) {
+  .decorated-zone::before {
+    left: 10px;
+    bottom: 17px;
+  }
+}
+
+.decorated-zone::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-right: 1px solid var(--outline-color);
+  border-top: 1px solid var(--outline-color);
+  right: 20px;
+  top: 20px;
+}
+
+@media (width < 768px) and (width >= 375px) {
+  .decorated-zone::after {
+    right: 10px;
+    top: 10px;
+  }
+}
+
+.title-decor {
+  background: var(--accent-color);
 }

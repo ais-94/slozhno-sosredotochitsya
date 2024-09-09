@@ -1,0 +1,39 @@
+.section_why,
+.section_how {
+  display: grid;
+  grid-template-columns: 32% 1fr;
+  gap: 20px;
+}
+
+@media (width < 768px) {
+  .section_why,
+  .section_how {
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+  }
+}
+
+.section_why .section_title {
+  grid-row: span 2;
+}
+
+.section_why_article {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.section_how_article {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+.section_article {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
