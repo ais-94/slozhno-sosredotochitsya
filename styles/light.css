@@ -2,7 +2,7 @@
   --main-text-color: #353430;
   --title-color: #ffc2e6;
   --title-shadow: #ff0070;
-  --accent-color: #ff8dcb; 
+  --accent-color: #ff8dcb;
   --background-image: url(../images/cover-image-light.png);
   --article-title-color: var(--main-text-color);
   --section-title-color: var(--main-text-color);
@@ -11,8 +11,26 @@
   --rec-color: var(--background-color);
   --hover-color: 1px solid rgba(50, 49, 45, 0.4);
   --background-color: rgba(255, 241, 247, 1);
+  --text-color: var(--title-shadow);
 }
 
 .page.theme_light .header__rec {
   display: none;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --main-text-color: #353430;
+    --title-color: #ffc2e6;
+    --title-shadow: #ff0070;
+    --accent-color: #ff8dcb;
+    --background-image: url(../images/cover-image-light.png);
+    --article-title-color: var(--main-text-color);
+    --section-title-color: var(--main-text-color);
+    --outline-color: var(--main-text-color);
+    --link-shadow: var(--title-color);
+    --rec-color: var(--background-color);
+    --hover-color: 1px solid rgba(50, 49, 45, 0.4);
+    --background-color: rgba(255, 241, 247, 1);
+  }
 }
