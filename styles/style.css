@@ -11,6 +11,7 @@ html {
   font-weight: 700;
   color: var(--title-color);
   text-shadow: 4px 4px 0px var(--title-shadow);
+  line-height: 82.5%;
 }
 
 @media (width < 768px) and (width >= 375px) {
@@ -18,7 +19,6 @@ html {
   .footer__title {
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
     margin-left: 0;
-    line-height: 82.5%;
   }
 }
 
@@ -70,7 +70,7 @@ body {
   color: var(--article-title-color);
 }
 
-.section:nth-of-type(3) .section_article-subtitle {
+.section_article-subtitle {
   font-size: 18px;
   font-weight: 400;
   color: var(--article-title-color);
@@ -141,4 +141,32 @@ body {
 
 .text-link:focus-visible {
   outline: 1px solid currentColor;
+}
+
+/*Секции. Общие свойства*/
+.section_grid {
+  display: grid;
+  grid-template-columns: 32% 1fr;
+  gap: 20px;
+}
+
+@media (width < 768px) {
+  .section_grid {
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+  }
+}
+
+.section_article_block {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+.section_article {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
 }
