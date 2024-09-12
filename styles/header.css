@@ -59,18 +59,6 @@
   }
 }
 
-.header__theme-menu-button {
-  border: none;
-  border-block-end: 1px solid transparent;
-  color: var(--navigation-text-color);
-  font-size: 18px;
-  text-align: center;
-  text-transform: lowercase;
-  background-color: transparent;
-  cursor: pointer;
-  min-inline-size: 70px;
-}
-
 .header__rec {
   position: absolute;
   color: var(--rec-color);
@@ -97,6 +85,18 @@
   background-color: var(--rec-color);
   top: 50%;
   right: 0;
+}
+
+.header__theme-menu-button {
+  border: none;
+  border-block-end: 1px solid transparent;
+  /*color: var(--navigation-text-color);*/
+  font-size: 18px;
+  text-align: center;
+  text-transform: lowercase;
+  background-color: transparent;
+  cursor: pointer;
+  min-inline-size: 70px;
 }
 
 .header__theme-menu-button {
