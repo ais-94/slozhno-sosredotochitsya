@@ -12,6 +12,7 @@
   --hover-color: 1px solid rgba(50, 49, 45, 0.4);
   --background-color: rgba(255, 241, 247, 1);
   --text-color: var(--title-shadow);
+  --navigation-text-color: var(--main-text-color);
 }
 
 .page.theme_light .header__rec {
@@ -32,5 +33,6 @@
     --rec-color: var(--background-color);
     --hover-color: 1px solid rgba(50, 49, 45, 0.4);
     --background-color: rgba(255, 241, 247, 1);
+    --navigation-text-color: var(--main-text-color);
   }
 }

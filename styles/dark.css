@@ -14,6 +14,7 @@
   --background-color: #000028;
   --accent-color: #ff0070;
   --outline-color: var(--title-shadow);
+  --navigation-text-color: var(--title-shadow);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -25,6 +26,7 @@
     --article-title-color: var(--background-color);
     --section-title-color: var(--title-shadow);
     --outline-color: var(--title-shadow);
+    --navigation-text-color: var(--title-shadow);
     --accent-color: #ff0070;
     --link-shadow: var(--title-shadow);
     --rec-color: var(--title-shadow);
