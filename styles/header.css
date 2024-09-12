@@ -88,7 +88,6 @@
 }
 
 .header__theme-menu-button {
-  border: none;
   border-block-end: 1px solid transparent;
   color: var(--navigation-text-color);
   font-size: 18px;
@@ -98,7 +97,6 @@
   cursor: pointer;
   min-inline-size: 70px;
   font-style: normal;
-  font-size: 18px;
   font-weight: 400;
   font-family: inherit;
   line-height: 100%;
@@ -106,7 +104,6 @@
   border: transparent;
   background: none;
   transition-duration: var(--transition-duration);
-  cursor: pointer;
 }
 
 .header__theme-menu-button:hover {
