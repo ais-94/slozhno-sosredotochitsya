@@ -163,10 +163,3 @@ body {
   gap: 20px;
   width: 100%;
 }
-
-.section_article {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  width: 100%;
-}
